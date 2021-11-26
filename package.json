@@ -1,0 +1,26 @@
+{
+  "name": "test-challenges",
+  "version": "1.0.0",
+  "description": "This is the repo for the testing challenges, week 4 of the CN Master Course",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QwuinJ/Test-Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QwuinJ/Test-Challenges/issues"
+  },
+  "homepage": "https://github.com/QwuinJ/Test-Challenges#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
