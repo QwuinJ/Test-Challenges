@@ -1,6 +1,6 @@
 const app = require("../app");
 
-describe("challenge 1 tests", () => {
+describe("slide 1 challenges", () => {
 	test("should not return null", () => {
 		expect(app.myFunc(2, 5)).not.toBeNull();
 	});
@@ -18,7 +18,7 @@ describe("challenge 1 tests", () => {
 	});
 });
 
-describe("challenge 2 test", () => {
+describe("slide 2 challenges", () => {
 	test("convert to a string", () => {
 		expect(app.stringFunc()).toEqual(expect.any(String));
 	});
@@ -30,5 +30,14 @@ describe("challenge 2 test", () => {
 	});
 	test("should be integer and 916", () => {
 		expect(app.squFunction(34)).toEqual(916);
+	});
+});
+
+describe("slide 3 challenges", () => {
+	test("should return century for any year given", () => {
+		expect(app.centFunc(2044)).toBe(20);
+	});
+	test("does it convert from binary", () => {
+		expect(app.intFunc([1, 0, 1, 1])).toBe(11);
 	});
 });

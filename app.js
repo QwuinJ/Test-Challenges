@@ -111,8 +111,27 @@ let squFunction = (num1) => {
 	n = parseInt(n);
 	return n;
 };
+// given a year, returns the century
+let centFunc = (num) => {
+	let n = String(num);
+	n = n.split("");
+	let cent = [];
+	for (let i = 0; i < 2; i++) {
+		cent.push(n[i]);
+	}
+	console.log(cent);
+	cent = cent.join("");
+	cent = parseInt(cent);
+	return cent;
+};
+// with an array of ones and zeros, convert the equivalent binary value to an integer
 
-console.log(squFunction(34));
+const intFunc = (arr) => {
+	const binaryString = arr.join("");
+	return parseInt(binaryString, 2);
+};
+
+console.log(intFunc([1, 1, 1, 1]));
 
 module.exports = {
 	myFunc,
@@ -125,4 +144,6 @@ module.exports = {
 	planetFunc,
 	classFunc,
 	squFunction,
+	centFunc,
+	intFunc,
 };
